@@ -1,5 +1,6 @@
 # java_chatroom_rmi
 A chatroom App with rmi
+
 On a deux dossiers :
 * Le dossier ChatRoom, qui contient le code du serveur
 * Le dossier ChatRoomClient; qui contient le du client
