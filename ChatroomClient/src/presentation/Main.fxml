@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.MainController">
+   <children>
+      <Button layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#quit" style="-fx-background-radius: 20; -fx-background-color: red;" text="X" textFill="WHITE" />
+      <Pane fx:id="suscribe_pan" layoutX="168.0" layoutY="241.0" prefHeight="106.0" prefWidth="385.0" style="-fx-background-color: #D1E8D7; -fx-background-radius: 20px;">
+         <children>
+            <TextField fx:id="clientPseudo" layoutX="14.0" layoutY="32.0" prefHeight="42.0" prefWidth="240.0" promptText="Renseigner un pseudo" />
+            <Button layoutX="264.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#subscribe" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: green; -fx-background-radius: 15px;" text="Se connecter" textFill="#fffefe" />
+         </children>
+      </Pane>
+      <Pane fx:id="room" disable="true" layoutX="69.0" layoutY="28.0" prefHeight="532.0" prefWidth="598.0">
+         <children>
+            <TextArea fx:id="message" layoutX="91.0" layoutY="476.0" prefHeight="20.0" prefWidth="358.0" promptText="Enter your Text" />
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="466.0" layoutY="476.0" onMouseClicked="#sendText" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@send.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="140.0" layoutX="228.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo_langui.png" />
+               </image></ImageView>
+            <Button layoutX="453.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#unsubscribe" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: red; -fx-background-radius: 15px;" text="Se deconnecter" textFill="WHITE" />
+            <TextArea fx:id="response" editable="false" layoutX="22.0" layoutY="59.0" prefHeight="399.0" prefWidth="553.0" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
