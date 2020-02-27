@@ -22,6 +22,24 @@ A chatroom App with rmi
   * **soit la machine client n'accepte pas les requêtes venant des autres machines**
   
   
-  * **English**
-    We have two directories :
-    
+  
+  
+* **English**
+
+  We have two directories :
+  * The directory ChatRoom which contains the server code
+  * The directory ChatRoomClient which contains the client code
+  
+  
+  Configure le build path.
+
+
+  Start le serveur.
+  
+  In the client code, open the MainController.java file located in src-> presentation, specify the IP address of the machine containing the server application in the constant "SEVER_LOCATION".
+
+  Start multiple clients on different machines.
+
+
+  **If a client cannot reach the server, it is because:**
+  
