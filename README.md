@@ -1,5 +1,5 @@
 # java_chatroom_rmi
-A chatroom App with rmi
+A chatroom App with rmi/ Une application de chatroom avec rmi 
 
 * **Français**
 
@@ -42,4 +42,5 @@ A chatroom App with rmi
 
 
   **If a client cannot reach the server, it is because:**
-  
+  * **either the machine containing the server application does not accept requests from other machines**
+  * **either the client machine does not accept requests from other machines**
