@@ -31,10 +31,10 @@ A chatroom App with rmi/ Une application de chatroom avec rmi
   * The directory ChatRoomClient which contains the client code
   
   
-  Configure le build path.
+  Configure the build path.
 
 
-  Start le serveur.
+  Start the serveur.
   
   In the client code, open the MainController.java file located in src-> presentation, specify the IP address of the machine containing the server application in the constant "SEVER_LOCATION".
 
